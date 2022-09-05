@@ -6,12 +6,12 @@ app = Flask(__name__)
 #funçao
 
 @app.route("/")
-def homepage():
-    return render_template("index.html")
+def login():
+    return render_template("login.html")
 
 
 @app.route("/registrar")
-def sobre():
+def registrar():
     return render_template("registrar.html")
 
 #Site no ar
