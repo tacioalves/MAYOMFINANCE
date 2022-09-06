@@ -14,20 +14,20 @@
             <h2>Comece sua nova jornada!</h2>
             <img src="../static/imagemfinanceiro.svg" class=left-login-image alt="financeiro">
         </div>
-        <div class="right-login">
+        <form class="right-login" action="registraUsuario" method="POST">
             <div class="card-login">
                 <h1>REGISTRAR</h1>
                 <div class="textfield">
                     <label for="usuario">Usuario</label>
-                    <input type="text" name="usuario" placeholder="Usuario">
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario">
                 </div>
                 <div class="textfield">
                     <label for="email">E-mail</label>
-                    <input type="text" name="email" placeholder="E-mail">
+                    <input type="text" id="email" name="email" placeholder="E-mail">
                 </div>
                 <div class="textfield">
                     <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
                 </div>
                 <div class="textfield">
                     <label for="repitasenha">Senha</label>
@@ -38,7 +38,7 @@
                     <button class="btn-register">Voltar</button>
                 </a>
             </div>
-        </div>
+        </form>
     </div>
 </body>
 </html>
