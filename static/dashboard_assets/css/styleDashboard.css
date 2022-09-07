@@ -28,6 +28,10 @@ body {
   width: 100%;
 }
 
+.dadoUsuario{
+  display: none;
+}
+
 /* =============== Navigation ================ */
 .navigation {
   position: fixed;
@@ -105,13 +109,27 @@ body {
 .botaoNavega{
   background-color: var(--purpleDark);
   color: var(--white);
+  width: 200px;
+  border-bottom: 0px;
+  border: none !important;
   position: relative;
   display: block;
-  min-width: 60px;
+  padding: 0 10px;
   height: 60px;
-  line-height: 75px;
-  text-align: center;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+  cursor:pointer;
 }
+
+.botaoNavega:hover,
+.botaoNavega.hovered {
+  background-color: var(--white);
+  color: var(--purpleDark)
+}
+
+
+
 
 /* --------- curve outside ---------- */
 .navigation ul li:hover a::before,
@@ -140,6 +158,35 @@ body {
   box-shadow: 35px -35px 0 10px var(--white);
   pointer-events: none;
 }
+
+.botaoNavega:hover a::before,
+.botaoNavega.hovered a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10px var(--white);
+  pointer-events: none;
+}
+
+.botaoNavega a::after,
+.botaoNavega.hovered a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px -35px 0 10px var(--white);
+  pointer-events: none;
+}
+
 
 /* ===================== Main ===================== */
 .main {
