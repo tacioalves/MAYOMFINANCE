@@ -42,7 +42,11 @@ def dashboard():
         nomeUsuario = validaLogin[2]
         return render_template("dashboard.html", saldo=saldoUsuario, nomeUsuario=nomeUsuario)
         
-    
+
+@app.route("/controlefinanceiro", methods=["POST","GET"])
+def controlefinanceiro():
+    return render_template("controleFinanceiro.html")
+
 
 #Site no ar
 if __name__ == "__main__":

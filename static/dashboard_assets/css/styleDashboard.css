@@ -102,6 +102,17 @@ body {
   white-space: nowrap;
 }
 
+.botaoNavega{
+  background-color: var(--purpleDark);
+  color: var(--white);
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 75px;
+  text-align: center;
+}
+
 /* --------- curve outside ---------- */
 .navigation ul li:hover a::before,
 .navigation ul li.hovered a::before {
