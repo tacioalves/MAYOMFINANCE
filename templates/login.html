@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/login_assets/style.css">
     <title>Login</title>
 </head>
 <body>
@@ -12,9 +12,9 @@
         <div class="left-login">
             <h1>MAYOM</h1>
             <h2>Faça login e comece a gerenciar sua vida financeira!</h2>
-            <img src="../static/imagemfinanceiro.svg" class=left-login-image alt="financeiro">
+            <img src="./static/login_assets/imagemfinanceiro.svg" class=left-login-image alt="financeiro">
         </div>
-        <div class="right-login">
+        <form class="right-login" action="dashboard" method="POST">
             <div class="card-login">
                 <h1>LOGIN</h1>
                 <div class="textfield">
@@ -26,11 +26,11 @@
                     <input type="password" name="senha" placeholder="Senha">
                 </div>
                 <button class="btn-login">Login</button>
-                <a href="https://mayomfinance.herokuapp.com/registrar">
-                    <button class="btn-register">Registrar</button>
-                </a>
+                </form>
+                <form action="registrar" method="POST">
+                <button class="btn-register">Registrar</button>
+                </form>
             </div>
-        </div>
     </div>
 </body>
 </html>
